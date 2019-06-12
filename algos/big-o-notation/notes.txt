@@ -1,0 +1,41 @@
+There are 10 - 20 solutions for a lot of problems, how do you determine which one is best?
+
+Big O  is a system or generalization on how to compare and talk about code? for example "write a function that accepts a string input and returns a revered copy"
+
+Reddit defined it better, its a simple way of saying how an algorithm's speed is affect by the size of the input. Its not very accurate, but it cares about the theory and math.
+
+'Computers have the same issue, and Big O notation is a way to measure the complexity of a solution, essentially how easy or hard it is. It does this by relating the amount of data you are working with to how many steps (roughly equivalent to how much time) it will take for a particular solution, or algorithm, will take.'
+
+O(1) means the algorithm takes the same amount of time to run regardless of the size of the input. This is a bit of a holy grail, and not often attained. In some data structures, retrieving a single element is O(1).
+
+O(log n) means the algorithm's speed drops very little as the input grows. It might mean you need to increase the input size by ten times before the algorithm's speed drops.
+
+O(n) means the algorithm's speed is linear with the input size. Adding up a set of numbers requires you to look at each of the numbers, so adding ten thousand numbers takes ten times as long as adding a thousand numbers.
+
+O stands for Order, in like the order of growth
+
+Big O gives us a number telling us how efficient it is. 
+
+You should care because of performance. In a large data set can make the difference in hours on running a solution. Big O gives us precise vocabulary which helps make it useful for discussing trade-offs between approaches.
+
+'When we're talking about algorithms (recipes for solving problems), we care about how fast an algorithm is. Specifically, what we often care about is how fast an algorithm can be given a big set of inputs. If you need to sort five children in order of age, the algorithm speed barely matters; but if you need to sort ten million children in order of age, then choosing the wrong algorithm can mean the difference between a runtime of a few minutes and a few days.'
+
+It also helps you see where your code is slowing down or crashing.
+
+-- THE PROBLEM WITH TIME --
+1. different machines will record different times
+2. The same machine will record different times.
+3. Fast algorithms, speed measurements may not be precise enough
+
+Rather than count time we can count the number of operations the computer has to do.
+
+an algorithm is O(f(n)) (BIG O of f of n) if the number of simple operations the computer has to do is eventually less than a constant times f(n), and n increases.
+
+- linear (f(n) = n) as n scales so does the runtime at a similar rate
+
+- quadratic (f(n) = n2) as n grows the runtime is square of n
+
+- constant (f(n) = 1) runetime does scale as n  grows
+
+- can also be entirely different
+
