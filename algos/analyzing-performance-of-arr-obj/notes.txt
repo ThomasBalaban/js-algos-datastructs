@@ -1,0 +1,15 @@
+Big O of objects
+- Insertion - o(1)
+- removal - o(1)
+- searching - o(n)
+- access - o(1)
+
+searching is not constant because you have to check every single item
+
+when to use arrays
+- When yoou need order
+- when you need fast access / insertion and removal (sort of)
+
+If you have a 10,000 item array and ask for item 5,000 it doesn't have to go through each item as there is a direct reference to go right to it.
+
+push / pop = O(1), basically all others are O(n), sort is O(N * log N)
