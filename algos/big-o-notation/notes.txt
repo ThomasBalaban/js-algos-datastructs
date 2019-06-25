@@ -1,10 +1,8 @@
 There are 10 - 20 solutions for a lot of problems, how do you determine which one is best?
 
-Big O  is a system or generalization on how to compare and talk about code? for example "write a function that accepts a string input and returns a revered copy"
+Big O is a system or generalization on how to compare and talk about code? for example "write a function that accepts a string input and returns a reversed copy"
 
-Reddit defined it better, its a simple way of saying how an algorithm's speed is affect by the size of the input. Its not very accurate, but it cares about the theory and math.
-
-'Computers have the same issue, and Big O notation is a way to measure the complexity of a solution, essentially how easy or hard it is. It does this by relating the amount of data you are working with to how many steps (roughly equivalent to how much time) it will take for a particular solution, or algorithm, will take.'
+Computers have the same issue, and Big O notation is a way to measure the complexity of a solution, essentially how easy or hard it is. It does this by relating the amount of data you are working with to how many steps (roughly equivalent to how much time) it will take for a particular solution, or algorithm, will take.
 
 O(1) means the algorithm takes the same amount of time to run regardless of the size of the input. This is a bit of a holy grail, and not often attained. In some data structures, retrieving a single element is O(1).
 
@@ -31,11 +29,48 @@ Rather than count time we can count the number of operations the computer has to
 
 an algorithm is O(f(n)) (BIG O of f of n) if the number of simple operations the computer has to do is eventually less than a constant times f(n), and n increases.
 
-- linear (f(n) = n) as n scales so does the runtime at a similar rate
+- linear (f(n) = n) as n scales so does the runtime at a similar rate = O(n)
 
-- quadratic (f(n) = n2) as n grows the runtime is square of n
+- quadratic (f(n) = n2) as n grows the runtime is square of n = O(n(squared))
 
-- constant (f(n) = 1) runetime does scale as n  grows
+- constant (f(n) = 1) runetime does not scale as n grows = O(1)
 
 - can also be entirely different
 
+----------------------------------------------------
+Simplyfying Big O Expressions
+
+Constants don't matter, simplify as much as possible
+- O(2n) vs O(n) and O(500) O(1) is the same as they do the same number of things each run time
+- O(13n(squared)) = O(n(squared))
+
+Smaller Terms Dont Matter 
+take O(n(squared) + 5n + 8) for instance, if n is 1,000 the 5n barely matters so it would be O(n(squared))
+
+big O Shorthands
+- Arithmetic Operations are Constant
+- Variable assignment is constant
+- Accessing elements in a array by index or key is constant
+- In a loop, the complexity is the length of the loop
+
+
+----------------------------------------------------
+
+space complexity
+
+- most primitives are constant space
+- strings require O(n), same as reference types (arrays objects)
+
+Time is usually more important than space as space (disk space) is 'cheap'
+----------------------------------------------------
+
+logarithms
+
+Its a exponent
+Kinda like how 3+?=7 you can do with 7-3=?
+
+Log_a(b)=c <==> a(c) = b
+Alogarithm is just finding the exponent of a number
+
+log_superscript_2(8) = 3, reads as log base 2 of 8 is equal to 3
+2, to what power, equals 8
